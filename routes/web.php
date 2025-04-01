@@ -14,4 +14,20 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/profile', function () {
+        return view('profile.show');
+    })->name('profile.show');
+    Route::get('/about-us', function () {
+        return view('about-us');
+    })->name('about-us');
+    Route::get('/contact-us', function () {
+        return view('contact-us');
+    })->name('contact-us');
+    Route::get('/services', function () {
+        return view('services');
+    })->name('services');
+    Route::get('/contact.submit', function () {
+        return view('contact.submit');
+    })->name('contact.submit');
 });
+
