@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-mark class="block h-9 w-auto" />
+                       
+                        <h2 class="text-2xl font-bold text-amber-400 dark:text-cyan-400">NepalExplorer</h2>
                     </a>
                 </div>
 
