@@ -578,75 +578,91 @@
     </div>
 </section>
 
-        <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="md:col-span-2">
-                        <a href="#" class="flex items-center group mb-6">
-                            <div class="mr-3 text-nepal-orange">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M3 3l18 18M21 3L3 21M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                </svg>
-                            </div>
-                            <h2 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-heading">
-                                NepalExplorer
-                            </h2>
-                        </a>
-                        <p class="text-gray-400 mb-4">
-                            Discover the majestic Himalayas, ancient temples, and rich cultural heritage of Nepal with our expert guides and curated experiences.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-facebook text-xl"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-instagram text-xl"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-twitter text-xl"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-youtube text-xl"></i>
-                            </a>
-                        </div>
+      <!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <a href="#" class="flex items-center group mb-6">
+                    <div class="mr-3 text-nepal-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3l18 18M21 3L3 21M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
                     </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-semibold mb-4 font-heading">Quick Links</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Nepal</a></li>
-                            <li><a href="#destinations" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
-                            <li><a href="#treks" class="text-gray-400 hover:text-white transition-colors">Treks & Tours</a></li>
-                            <li><a href="#gallery" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-semibold mb-4 font-heading">Contact Us</h3>
-                        <address class="text-gray-400 not-italic">
-                            <p class="mb-2">Pokhara</p>
-                            <p class="mb-2">Nepal</p>
-                            <p class="mb-2">+977 1 1234567</p>
-                            <p class="mb-2">info@nepalexplorer.com</p>
-                        </address>
-                    </div>
+                    <h2 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-heading">
+                        NepalExplorer
+                    </h2>
+                </a>
+                <p class="text-gray-400 mb-4">
+                    Discover the majestic Himalayas, ancient temples, and rich cultural heritage of Nepal with our expert guides and curated experiences.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
                 </div>
                 
-                <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
-                        &copy; 2023 NepalExplorer. All rights reserved.
-                    </p>
-                    <div class="flex gap-6">
-                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
-                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Sitemap</a>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4 font-heading">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Nepal</a></li>
+                    <li><a href="#destinations" class="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
+                    <li><a href="#treks" class="text-gray-400 hover:text-white transition-colors">Treks & Tours</a></li>
+                    <li><a href="#gallery" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                    <h3 class="text-lg font-semibold mb-4 font-heading">Our Location</h3>
+                    <div class="w-full h-48 rounded-lg overflow-hidden shadow-md">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.423091623479!2d83.98559321506163!3d28.20953898258964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594d4e6b9b3b1%3A0x7c8b8b8b8b8b8b8b!2sPokhara%2C%20Nepal!5e0!3m2!1sen!2snp!4v1697040000000!5m2!1sen!2snp" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 font-heading">Contact Us</h3>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">Pokhara</p>
+                        <p class="mb-2">Nepal</p>
+                        <p class="mb-2">+977 9800000002</p>
+                        <p class="mb-2">info@nepalexplorer.com</p>
+                    </address>
+                </div>
+               
             </div>
-        </footer>
-
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                &copy; 2023 NepalExplorer. All rights reserved.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
