@@ -60,11 +60,6 @@
                             {{ __('Profile') }}
                         </a>
 
-                        @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                            <a href="{{ route('api-tokens.index') }}" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                {{ __('API Tokens') }}
-                            </a>
-                        @endif
 
                         <div class="border-t border-gray-200 dark:border-gray-600"></div>
 
@@ -140,12 +135,12 @@
                         <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-nepal-blue dark:hover:text-nepal-purple">
                             {{ __('Profile') }}
                         </a>
-
+<!-- 
                         @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                             <a href="{{ route('api-tokens.index') }}" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-nepal-blue dark:hover:text-nepal-purple">
                                 {{ __('API Tokens') }}
                             </a>
-                        @endif
+                        @endif -->
 
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
