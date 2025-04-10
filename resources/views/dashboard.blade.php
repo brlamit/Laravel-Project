@@ -510,9 +510,7 @@
                     </svg>
                 </span>
                 <span class="relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-white after:scale-x-0 after:transition-transform after:duration-300 group-hover:after:scale-x-100">
-                <x-nav-link href="{{ route('contact-us') }}" :active="request()->routeIs('contact-us')">
-                        {{ __('Contact Us') }}
-                    </x-nav-link>
+               Contact Us
                 </span>
             </a>
         </div>
@@ -585,26 +583,44 @@
             <div>
                 <h3 class="text-xl font-semibold mb-6 font-heading border-b border-orange-400 pb-2 inline-block">Explore</h3>
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        Home
-                    </a></li>
-                    <li><a href="#about" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        About Nepal
-                    </a></li>
-                    <li><a href="#destinations" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        Destinations
-                    </a></li>
-                    <li><a href="#treks" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        Treks & Tours
-                    </a></li>
-                    <li><a href="#gallery" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
-                        <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                        Gallery
-                    </a></li>
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
+                            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
+                            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            About Nepal
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#destinations" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
+                            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#treks" class="text-gray-300 hover:text-orange-400 transition-colors flex items-center group">
+                            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            Treks & Tours
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('gallery') }}"
+                        class="transition-colors flex items-center group
+                                {{ request()->routeIs('gallery') 
+                                        ? 'text-nepal-blue dark:text-nepal-purple font-medium' 
+                                        : 'text-gray-300 hover:text-orange-400 dark:hover:text-orange-400' }}">
+                            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                            {{ __('Gallery') }}
+                        </a>
+                    </li>
                 </ul>
             </div>
             

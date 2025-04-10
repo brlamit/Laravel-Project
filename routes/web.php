@@ -29,5 +29,8 @@ Route::middleware([
     Route::get('/contact.submit', function () {
         return view('contact.submit');
     })->name('contact.submit');
+    Route::get('/gallery', function () {
+        return view('gallery');
+    })->name('gallery');
 });
 
