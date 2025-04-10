@@ -1,4 +1,3 @@
-
 <x-app-layout>
     <head>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -71,12 +70,12 @@
         <section class="relative h-screen w-full overflow-hidden">
             <!-- Background Image with Parallax Effect -->
             <div class="absolute inset-0 overflow-hidden">
-                <img 
-                    src="https://images.unsplash.com/photo-1607836046730-3317bd58a31b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    alt="Snow-covered Himalayas in Nepal"
-                    class="absolute inset-0 w-full h-full object-cover scale-110 lg:scale-100 transform transition-all duration-1000 ease-out hover:scale-100"
-                    loading="eager"
-                >
+            <img 
+                src="https://images.unsplash.com/photo-1607836046730-3317bd58a31b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Snow-covered Himalayas in Nepal"
+                class="absolute inset-0 w-full h-full object-cover scale-110 lg:scale-100 transform transition-all duration-1000 ease-out hover:scale-100"
+                loading="eager"
+            >
             </div>
             
             <!-- Gradient Overlay -->
@@ -87,7 +86,7 @@
             
             <!-- Hero Content -->
             <div class="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center">
-                <div class="max-w-4xl space-y-6 animate-fade-in">
+            <div class="max-w-4xl space-y-6 animate-fade-in">
                     <div class="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
                         <span class="text-sm font-medium text-white/90 tracking-widest">EXPLORE THE HIMALAYAS</span>
                     </div>
