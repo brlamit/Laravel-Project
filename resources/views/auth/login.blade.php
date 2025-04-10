@@ -107,14 +107,19 @@
                 </div>
 
                 <!-- Password -->
-                <div>
+                <div class="relative">
                     <x-label for="password" value="{{ __('Password') }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" />
                     <x-input id="password" 
-                             class="block w-full rounded-lg border-gray-300 dark:border-gray-600 shadow-sm focus:ring-nepal-blue focus:border-nepal-blue dark:bg-gray-700 dark:text-gray-100 transition duration-200" 
+                             class="block w-full rounded-lg border-gray-300 dark:border-gray-600 shadow-sm focus:ring-nepal-blue focus:border-nepal-blue dark:bg-gray-700 dark:text-gray-100 transition duration-200 pr-10" 
                              type="password" 
                              name="password" 
                              required 
-                             autocomplete="current-password" />
+                             autocomplete="new-password" />
+                    <button type="button" 
+                            onclick="togglePasswordVisibility('password', 'password-icon')" 
+                            class="absolute right-3 top-9 text-gray-500 dark:text-gray-400 hover:text-nepal-blue dark:hover:text-nepal-purple">
+                        <i id="password-icon" class="fas fa-eye"></i>
+                    </button>
                 </div>
 
                 <!-- Remember Me -->
@@ -149,4 +154,20 @@
             </form>
         </div>
     </div>
+    <script>
+        function togglePasswordVisibility(inputId, iconId) {
+            const input = document.getElementById(inputId);
+            const icon = document.getElementById(iconId);
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+    </script>
 </x-guest-layout>
