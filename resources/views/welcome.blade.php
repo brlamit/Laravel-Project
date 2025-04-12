@@ -103,71 +103,95 @@
             </nav>
         </header>
 
-        <!-- Hero Section -->
-        <section class="relative h-screen w-full overflow-hidden">
-            <!-- Background Image with Parallax Effect -->
-            <div class="absolute inset-0 overflow-hidden">
-                <img 
-                    src="https://images.unsplash.com/photo-1607836046730-3317bd58a31b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    alt="Snow-covered Himalayas in Nepal"
-                    class="absolute inset-0 w-full h-full object-cover scale-110 lg:scale-100 transform transition-all duration-1000 ease-out hover:scale-100"
-                    loading="eager"
-                >
+      <!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden">
+    <!-- Background Image with Parallax Effect -->
+    <div class="absolute inset-0 overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1607836046730-3317bd58a31b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Snow-covered Himalayas in Nepal"
+            class="absolute inset-0 w-full h-full object-cover scale-110 lg:scale-100 transform transition-all duration-1000 ease-out hover:scale-100"
+            loading="eager"
+        >
+    </div>
+    
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 z-10"></div>
+    
+    <!-- Animated Mountain Silhouette -->
+    <div class="absolute bottom-0 left-0 right-0 h-40 bg-[url('https://www.transparentpng.com/thumb/mountain/mountain-silhouette-png-5.png')] bg-cover bg-bottom opacity-20 animate-wave z-10"></div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center">
+        <div class="max-w-4xl w-full space-y-6 animate-fade-in">
+            <div class="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                <span class="text-sm font-medium text-white/90 tracking-widest">EXPLORE THE HIMALAYAS</span>
             </div>
             
-            <!-- Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 z-10"></div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight font-heading">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#a5b4fc] drop-shadow-2xl">Nepal's Sacred</span>
+                <span class="block mt-2 text-white">Horizons</span>
+            </h1>
             
-            <!-- Animated Mountain Silhouette -->
-            <div class="absolute bottom-0 left-0 right-0 h-40 bg-[url('https://www.transparentpng.com/thumb/mountain/mountain-silhouette-png-5.png')] bg-cover bg-bottom opacity-20 animate-wave z-10"></div>
+            <p class="text-xl md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                Where Himalayan peaks meet ancient spiritual legacy
+            </p>
             
-            <!-- Hero Content -->
-            <div class="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center">
-                <div class="max-w-4xl space-y-6 animate-fade-in">
-                    <div class="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-                        <span class="text-sm font-medium text-white/90 tracking-widest">EXPLORE THE HIMALAYAS</span>
-                    </div>
-                    
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight font-heading">
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#a5b4fc] drop-shadow-2xl">Nepal's Sacred</span>
-                        <span class="block mt-2 text-white">Horizons</span>
-                    </h1>
-                    
-                    <p class="text-xl md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
-                        Where Himalayan peaks meet ancient spiritual legacy
-                    </p>
-                    
-                    <div class="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#explore" class="px-8 py-3.5 bg-white text-[#1b1b18] font-semibold rounded-full hover:bg-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2">
+            <!-- Search Bar -->
+            <div class="mt-8 max-w-2xl mx-auto relative">
+                <form class="w-full">
+                    <div class="relative flex items-center bg-white/10 backdrop-blur-sm rounded-full border border-white/20 overflow-hidden hover:border-white/40 transition-all duration-300">
+                        <input 
+                            type="text" 
+                            placeholder="Search for treks, temples, or experiences..."
+                            class="w-full py-4 px-6 bg-transparent text-white placeholder-white/70 focus:outline-none focus:ring-0 border-none"
+                        >
+                        <button 
+                            type="submit"
+                            class="absolute right-2 bg-nepal-blue hover:bg-nepal-purple text-white p-2 rounded-full transition-colors duration-300"
+                        >
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            Explore Nepal
-                        </a>
-                        <a href="#gallery" class="px-8 py-3.5 border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21 15 16 10 5 21"></polyline>
-                            </svg>
-                            View Gallery
-                        </a>
+                        </button>
                     </div>
-                </div>
-                
-                <!-- Scroll Indicator -->
-                <div class="absolute bottom-10 animate-float">
-                    <a href="#about" class="flex flex-col items-center text-white/80 hover:text-white transition-colors">
-                        <span class="mb-2 text-sm tracking-wider">SCROLL TO EXPLORE</span>
-                        <div class="w-8 h-12 border-2 border-white/60 rounded-full flex justify-center p-1">
-                            <div class="w-1 h-2 bg-white/80 rounded-full animate-pulse-slow"></div>
-                        </div>
-                    </a>
+                </form>
+                <div class="mt-2 text-xs text-white/70 text-center">
+                    Popular searches: <span class="text-white/90">Everest Base Camp, Pashupatinath, Pokhara</span>
                 </div>
             </div>
-        </section>
-
+            
+            <div class="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#explore" class="px-8 py-3.5 bg-white text-[#1b1b18] font-semibold rounded-full hover:bg-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Explore Nepal
+                </a>
+                <a href="#gallery" class="px-8 py-3.5 border-2 border-white text-white font-semibold rounded-full hover:bg-white/10 hover:shadow-lg transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    View Gallery
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-5 animate-float">
+            <a href="#about" class="flex flex-col items-center text-white/80 hover:text-white transition-colors">
+                <span class="mb-2 text-sm tracking-wider">SCROLL TO EXPLORE</span>
+                <div class="w-8 h-12 border-2 border-white/60 rounded-full flex justify-center p-1">
+                    <div class="w-1 h-2 bg-white/80 rounded-full animate-pulse-slow"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
         <!-- About Section -->
         <section id="about" class="py-20 bg-white dark:bg-[#0a0a0a]">
             <div class="container mx-auto px-6 lg:px-8">

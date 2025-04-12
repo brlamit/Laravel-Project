@@ -99,8 +99,31 @@
                     <p class="text-xl md:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
                         Where Himalayan peaks meet ancient spiritual legacy
                     </p>
-                    
-                    <div class="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                     <!-- Search Bar -->
+            <div class="mt-8 max-w-2xl mx-auto relative">
+                <form class="w-full">
+                    <div class="relative flex items-center bg-white/10 backdrop-blur-sm rounded-full border border-white/20 overflow-hidden hover:border-white/40 transition-all duration-300">
+                        <input 
+                            type="text" 
+                            placeholder="Search for treks, temples, or experiences..."
+                            class="w-full py-4 px-6 bg-transparent text-white placeholder-white/70 focus:outline-none focus:ring-0 border-none"
+                        >
+                        <button 
+                            type="submit"
+                            class="absolute right-2 bg-nepal-blue hover:bg-nepal-purple text-white p-2 rounded-full transition-colors duration-300"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-2 text-lg text-white  text-center">
+                    Popular searches: <span class="text-white/90">Everest Base Camp, Pashupatinath, Pokhara</span>
+                </div>
+            </div>  
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center">
                         <a  href="{{ route('explore') }}" class="px-8 py-3.5 bg-white text-[#1b1b18] font-semibold rounded-full hover:bg-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-[1.03] flex items-center justify-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
