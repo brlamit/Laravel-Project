@@ -32,5 +32,8 @@ Route::middleware([
     Route::get('/gallery', function () {
         return view('gallery');
     })->name('gallery');
+    Route::get('/explore', function () {
+        return view('explore');
+    })->name('explore');
 });
 
