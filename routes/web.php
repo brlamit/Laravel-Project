@@ -35,5 +35,11 @@ Route::middleware([
     Route::get('/explore', function () {
         return view('explore');
     })->name('explore');
+    Route::get('/explore/{id}', function ($id) {
+        return view('explore.show', ['id' => $id]);
+    })->name('explore.show');
+    Route::get('/search', function () {
+        return view('search');
+    })->name('search');
 });
 
