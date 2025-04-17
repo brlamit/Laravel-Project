@@ -19,6 +19,9 @@
             <a href="{{ route('dashboard') }}" class="text-gray-700 dark:text-gray-300 hover:text-nepal-blue dark:hover:text-nepal-purple transition-colors {{ request()->routeIs('dashboard') ? 'text-nepal-blue dark:text-nepal-purple font-medium' : '' }}">
                 {{ __('Home') }}
             </a>
+            <a href="{{ route('packages') }}" class="text-gray-700 dark:text-gray-300 hover:text-nepal-blue dark:hover:text-nepal-purple transition-colors {{ request()->routeIs('packages') ? 'text-nepal-blue dark:text-nepal-purple font-medium' : '' }}">
+                {{ __('Packages') }}
+            </a>
             <a href="{{ route('about-us') }}" class="text-gray-700 dark:text-gray-300 hover:text-nepal-blue dark:hover:text-nepal-purple transition-colors {{ request()->routeIs('about-us') ? 'text-nepal-blue dark:text-nepal-purple font-medium' : '' }}">
                 {{ __('About Us') }}
             </a>

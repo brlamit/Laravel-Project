@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TourPackageController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,5 +42,30 @@ Route::middleware([
     Route::get('/search', function () {
         return view('search');
     })->name('search');
+    Route::get('/packageadder', fn() => view('packageadder'))->name('packageadder');
+
+// Add the 'packages' route
+Route::get('/packages', [TourPackageController::class, 'index'])->name('packages');
+
+Route::get('/tour-packages', [TourPackageController::class, 'index'])->name('tourpackages.index');
+Route::get('/tour-packages/create', [TourPackageController::class, 'create'])->name('tourpackages.create');
+Route::post('/tour-packages', [TourPackageController::class, 'store'])->name('tourpackages.store');
+Route::get('/tour-packages', [TourPackageController::class, 'index'])->name('tourpackages.index');
+    Route::get('/conference', function () {
+        return view('conference');
+    })->name('conference');
+    Route::get('/conference/{id}', function ($id) {
+        return view('conference.show', ['id' => $id]);
+    })->name('conference.show');
+    Route::get('/packages/create', function () {
+        return view('packages.create');
+    })->name('packages.create');
+    Route::post('/packages', function () {
+        // Handle the form submission for creating a package
+        return redirect()->route('packages.index')->with('success', 'Package created successfully!');
+    })->name('packages.store');
+    Route::get('/packages/{id}', function ($id) {
+        return view('packages.show', ['id' => $id]);
+    })->name('packages.show');
 });
 
