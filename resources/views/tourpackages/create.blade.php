@@ -46,6 +46,11 @@
                             }
                         },
                         colors: {
+                            'nepal-blue': '#2563eb',
+                            'nepal-purple': '#7c3aed',
+                            'nepal-orange': '#f97316',
+                            'nepal-red': '#dc2626',
+                            'nepal-gold': '#d97706',
                             primary: {
                                 50: '#f0f9ff',
                                 100: '#e0f2fe',

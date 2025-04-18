@@ -96,7 +96,7 @@
                      style="animation-delay: {{ $loop->index * 0.1 }}s">
                     <!-- Package Image -->
                     <div class="h-48 overflow-hidden">
-                        <img src="{{ asset('storage/'.$package->PackageImage) }}" 
+                        <img src="{{ asset("storage/app/public/images/{$package->PackageImage}") }}" 
                              alt="{{ $package->PackageName }}"
                              class="w-full h-full object-cover hover:scale-105 transition duration-500">
                     </div>
@@ -144,11 +144,6 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
-
-            <!-- Pagination -->
-            <div class="mt-8">
-                {{ $packages->links() }}
             </div>
         </div>
     </div>
