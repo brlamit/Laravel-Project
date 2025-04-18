@@ -62,7 +62,7 @@ Route::get('/tour-packages', [TourPackageController::class, 'index'])->name('tou
     })->name('packages.create');
     Route::post('/packages', function () {
         // Handle the form submission for creating a package
-        return redirect()->route('packages.index')->with('success', 'Package created successfully!');
+        return redirect()->route('tourpackages.index')->with('success', 'Package created successfully!');
     })->name('packages.store');
     Route::get('/packages/{id}', function ($id) {
         return view('packages.show', ['id' => $id]);
